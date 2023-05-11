@@ -35,7 +35,7 @@ const Header = () => {
 
           <div className='tag-cmp app__flex'>
             <p className='p'>Web Developer</p>
-            <p className='p'> Student</p>
+            <p className='p'> Junior</p>
 
           </div>
         </div>
@@ -64,7 +64,7 @@ const Header = () => {
         whileInView={scaleVariants.whileInView}
         className="app__header-circle"
       >
-        {[images.php, images.angu, images.boot, images.db].map((circle,index)=>(
+        {[images.next, images.ts, images.react, images.fire].map((circle,index)=>(
          <div className='cirlce-cmp app__flex' key={`circle-${index}`}>
             <img src={circle} alt="circle" />
          </div>

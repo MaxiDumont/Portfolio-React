@@ -176,7 +176,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 
   padding: 1rem;
 
@@ -196,9 +195,9 @@
     transition: all 0.3s ease-in-out;
 
     svg {
-      width: 15px;
-      height: 15px;
       color: var(--gray-color);
+      display: flex;
+      justify-content: center;
     }
 
     &:hover {

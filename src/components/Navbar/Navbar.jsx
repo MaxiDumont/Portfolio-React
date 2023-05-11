@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import {AiOutlineHome} from 'react-icons/ai';
 import {BiBookAlt,BiMessageSquareDetail,BiUser} from 'react-icons/bi';
 import {GiSkills} from 'react-icons/gi';
 
 
-import { images } from '../../constants';
 import './Navbar.scss';
 
 const Navbar = () => {

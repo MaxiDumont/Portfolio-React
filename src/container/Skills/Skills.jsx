@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import ReactTooltip from 'react-tooltip';
-import { images } from '../../constants';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import ReactTooltip from "react-tooltip";
+import { images } from "../../constants";
 
-import { AppWrap, MotionWrap } from '../../wrapper';
-import { urlFor, client } from '../../client';
-import './Skills.scss';
+import { AppWrap, MotionWrap } from "../../wrapper";
+import { urlFor, client } from "../../client";
+import "./Skills.scss";
 
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
-  const openInNewTab = url => {
-    window.open(url, '_blank', 'noopener,noreferrer');
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   useEffect(() => {
@@ -29,7 +29,9 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">Skills <span>&</span> Tasks available</h2>
+      <h2 className="head-text">
+        Skills <span>&</span> Tasks available
+      </h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
@@ -51,26 +53,58 @@ const Skills = () => {
           ))}
         </motion.div>
 
-
         <div className="app__skills-exp">
-          <h3 className='blue' >◉ Solve errors or problems in the execution of websites.</h3>
-          <br/>
-          <h3 className='gray' >◉ Add new website features</h3>
-          <br/>
-          <h3 className='blue' >◉ Write code in different programming languages</h3>
-          <br/>
-          <h3 className='gray' >◉ Monitor Website Traffic</h3>
-          <br/>
-          <h3 className='blue' >◉ Make portable while maintaining and updating the website</h3>
-          <br/>
-          <h3 className='gray' >◉Extensive testing of websites to find errors.</h3>
+          <h3 className="blue">
+            ◉ Solve errors or problems in the execution of websites.
+          </h3>
+          <br />
+          <h3 className="gray">◉ Add new website features</h3>
+          <br />
+          <h3 className="blue">
+            ◉ Write code in different programming languages
+          </h3>
+          <br />
+          <h3 className="gray">◉ Monitor Website Traffic</h3>
+          <br />
+          <h3 className="blue">
+            ◉ Make portable while maintaining and updating the website
+          </h3>
+          <br />
+          <h3 className="gray">
+            ◉Extensive testing of websites to find errors.
+          </h3>
 
+          <div className="app__skills-exp-list">
+            <button
+              style={{
+                marginRight: "10px",
+              }}
+            >
+              <a
+                href="./CV-Web developer.pdf"
+                download={true}
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                }}
+              >
+                Download CV
+              </a>
+            </button>
 
-
-              <button onClick={() => openInNewTab('https://www.canva.com/design/DAFRpTYI-EU/H7oPiDfL9-aaIVbNexx2-Q/view?utm_content=DAFRpTYI-EU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink')}>
-                See CV
-              </button>
-
+            <button>
+              <a
+                href="./Recommendation letter.pdf"
+                download={true}
+                style={{
+                  textDecoration: "none",
+                  color: "white"
+                }}
+              >
+                Recommendation letter
+              </a>
+            </button>
+          </div>
         </div>
       </div>
     </>
@@ -78,7 +112,7 @@ const Skills = () => {
 };
 
 export default AppWrap(
-  MotionWrap(Skills, 'app__skills'),
-  'skills',
-  'app__3color',
+  MotionWrap(Skills, "app__skills"),
+  "skills",
+  "app__3color"
 );

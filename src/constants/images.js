@@ -41,6 +41,9 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
+import ts from '../assets/ts.png';
+import fire from '../assets/fire.png';
+import next from '../assets/next.png';
 
 export default {
   email,
@@ -83,4 +86,7 @@ export default {
   php,
   Portada,
   me,
+  ts,
+  fire,
+  next,
 };
